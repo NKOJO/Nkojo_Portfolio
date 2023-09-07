@@ -139,23 +139,29 @@ li a span {
   margin-left: 10px;
     display: none;
   }
+  
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
 
-  .social-icons {
-    list-style: none; /* Remove list bullets */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .social-icons li {
-    display: inline-block; /* Display icons side by side */
-    margin-left: 10px; /* Add spacing between icons */
-  }
-  
-  .social-icons img {
-    width: 20px; /* Adjust the size of your icons */
-    height: 20px;
-  }
-  input.checkbox-nav:checked ~ nav ul li a span {
+.social-icon {
+  margin: 0 10px;
+}
+
+.social-icon img {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%; 
+  transition: transform 0.3s ease; 
+}
+
+.social-icon img:hover {
+  transform: scale(1.2); 
+}
+
+input.checkbox-nav:checked ~ nav ul li a span {
   display: inline-block;
 }
 input.checkbox-nav:checked ~ nav ul li a i {
@@ -413,5 +419,3 @@ input.checkbox-theme:checked ~ section main li {
   .projects ul li {
     height: 300px;
   }
-
-
