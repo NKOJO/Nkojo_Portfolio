@@ -154,11 +154,26 @@ li a span {
   width: 20px; 
   height: 20px;
   border-radius: 50%; 
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .social-icon img:hover {
   transform: scale(1.2); 
+}
+
+.social-icon img {
+  background-color: #fff; 
+  padding: 2px;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+@media (prefers-color-scheme: dark) {
+  .icon {
+    background-color: white;
+    padding: 1px; 
+  }
 }
 
 input.checkbox-nav:checked ~ nav ul li a span {
@@ -419,3 +434,4 @@ input.checkbox-theme:checked ~ section main li {
   .projects ul li {
     height: 300px;
   }
+}
