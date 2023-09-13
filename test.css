@@ -1,0 +1,53 @@
+/* Add this CSS within your media query for smaller screens or adjust as needed */
+
+.contact-container {
+    text-align: center;
+    max-width: 50%; /* Adjust the maximum width of the contact container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .contact-container img {
+    max-width: 50%; /* Make the image responsive to its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"], /* Assuming "Your Number" is a telephone input */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="tel"]::placeholder,
+  textarea::placeholder {
+    color: #999;
+  }
+  
+
+.contact-container img {
+    width: 100%;
+    max-width: 200px; 
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-container img:hover {
+    transform: scale(1.1); 
+  }
